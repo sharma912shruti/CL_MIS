@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CL_MIS</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Login</string>
+    <string name="payment">Payment</string>
+    <string name="or_signup">Sign Up</string>
+    <string name="sign_in_with_underline">Sign In</string>
+    <string name="mobile">Mobile</string>
+    <string name="sign_in">Sign In</string>
+</resources>

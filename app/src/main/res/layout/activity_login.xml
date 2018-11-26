@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/sign_in_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="@dimen/activity_horizontal"
+        android:layout_marginTop="@dimen/page_margin"
+        android:text="@string/sign_in_with_underline"
+        android:textColor="@color/mate_blue"
+        android:textSize="@dimen/font_xxlarge"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_text"
+        android:layout_marginBottom="@dimen/activity_horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal"
+        android:layout_marginRight="@dimen/activity_horizontal"
+        android:layout_marginTop="@dimen/page_margin"
+        android:background="@drawable/rounded_corner_background"
+        android:hint="@string/mobile"
+        android:padding="@dimen/basic_view_margin"
+        android:textSize="@dimen/font_medium" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile"
+        android:layout_marginLeft="@dimen/activity_horizontal"
+        android:layout_marginRight="@dimen/activity_horizontal"
+        android:layout_marginTop="@dimen/activity_horizontal"
+        android:background="@drawable/rounded_corner_background"
+        android:hint="@string/password_hint"
+        android:padding="@dimen/basic_view_margin"
+        android:textSize="@dimen/font_medium" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="@dimen/activity_horizontal"
+        android:layout_marginRight="@dimen/activity_horizontal"
+        android:layout_marginTop="@dimen/page_margin"
+        android:background="@drawable/button_tap_effect"
+        android:elevation="@dimen/page_margin"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium" />
+
+
+</RelativeLayout>

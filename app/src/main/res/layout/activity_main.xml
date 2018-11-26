@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto - Approval"
+        android:id="@+id/auto_approval"
+        android:textColor="@color/mate_blue"
+        android:textSize="@dimen/font_medium"
+        android:padding="@dimen/activity_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/mate_green"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pending Approval"
+        android:id="@+id/pending_approval"
+        android:textColor="@color/mate_blue"
+        android:textSize="@dimen/font_medium"
+        android:padding="@dimen/activity_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/mate_green"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pending Mechine Approval"
+        android:textColor="@color/mate_blue"
+        android:id="@+id/approval_pending_to_machine"
+        android:textSize="@dimen/font_medium"
+        android:padding="@dimen/activity_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/mate_green"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validation"
+        android:id="@+id/validation"
+        android:textColor="@color/mate_blue"
+        android:textSize="@dimen/font_medium"
+        android:padding="@dimen/activity_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/mate_green"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Newly Open Centers"
+        android:id="@+id/new_center"
+        android:textColor="@color/mate_blue"
+        android:textSize="@dimen/font_medium"
+        android:padding="@dimen/activity_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/mate_green"/>
+
+
+</LinearLayout>
