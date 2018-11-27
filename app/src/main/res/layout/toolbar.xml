@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
-    android:background="@color/white"
+    android:background="@color/mate_green"
     android:minHeight="?attr/actionBarSize"
     local:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -14,7 +14,7 @@
         android:textSize="@dimen/font_xlarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/mate_blue"
+        android:textColor="@color/white"
         android:id="@+id/toolbar_title" />
 
 </android.support.v7.widget.Toolbar>

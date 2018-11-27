@@ -17,13 +17,13 @@ import mis.cl.com.cl_mis.adapter.ItemAdapter;
  * Created by navlakha on 26/11/18.
  */
 
-public class ValidationActivity extends BaseActivity {
+public class MachinePendingApprovalActivity extends BaseActivity {
 
     @BindView(R.id.toolbar)
     Toolbar mToolbar;
 
-    @BindView(R.id.validation_recyclerview)
-    RecyclerView mValidationRecyclerView;
+    @BindView(R.id.machine_pending_recyclerview)
+    RecyclerView mMachinePendingRecyclerView;
 
     private ArrayList<String> mList;
     private ItemAdapter mAdapter;
@@ -31,7 +31,7 @@ public class ValidationActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_validation);
+        setContentView(R.layout.activity_mechine_pending);
         ButterKnife.bind(this);
         initialiseValue();
         setAdapter();
@@ -42,16 +42,15 @@ public class ValidationActivity extends BaseActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         mToolbar.setNavigationIcon(R.drawable.ic_chevron_left_black_24dp);
-        setHeader("Validation", mToolbar);
+        setHeader("Machine Pending Approval", mToolbar);
     }
 
     private void setAdapter(){
         mList = new ArrayList<>();
         mAdapter = new ItemAdapter(this, mList);
-        mValidationRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mValidationRecyclerView.setAdapter(mAdapter);
+        mMachinePendingRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mMachinePendingRecyclerView.setAdapter(mAdapter);
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

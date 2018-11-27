@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:padding="@dimen/basic_view_margin"
+    android:layout_height="wrap_content">
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_assistant_black_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal"
+        android:layout_marginTop="@dimen/activity_horizontal"
+        android:layout_toRightOf="@+id/icon"
+        android:text="Blood Test"
+        android:id="@+id/test_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/font_medium" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_name"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginLeft="@dimen/activity_horizontal"
+        android:text="pending"
+        android:textSize="@dimen/font_xsmall"
+        android:textColor="@color/colorPrimary"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/icon"
+        android:background="@color/mate_blue"
+        android:layout_marginLeft="@dimen/basic_view_margin"
+        android:layout_marginRight="@dimen/basic_view_margin"
+        android:layout_marginTop="@dimen/basic_view_margin"/>
+</RelativeLayout>

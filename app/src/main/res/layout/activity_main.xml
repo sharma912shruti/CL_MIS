@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
     android:layout_height="match_parent">
 
     <include
@@ -13,6 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Auto - Approval"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/activity_horizontal"
+        android:drawableLeft="@drawable/ic_toys_black_24dp"
         android:id="@+id/auto_approval"
         android:textColor="@color/mate_blue"
         android:textSize="@dimen/font_medium"
@@ -21,12 +23,17 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/basic_view_margin"
+        android:layout_marginRight="@dimen/basic_view_margin"
         android:background="@color/mate_green"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Pending Approval"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/activity_horizontal"
+        android:drawableLeft="@drawable/ic_toys_black_24dp"
         android:id="@+id/pending_approval"
         android:textColor="@color/mate_blue"
         android:textSize="@dimen/font_medium"
@@ -35,12 +42,17 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/basic_view_margin"
+        android:layout_marginRight="@dimen/basic_view_margin"
         android:background="@color/mate_green"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Pending Mechine Approval"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/activity_horizontal"
+        android:drawableLeft="@drawable/ic_toys_black_24dp"
         android:textColor="@color/mate_blue"
         android:id="@+id/approval_pending_to_machine"
         android:textSize="@dimen/font_medium"
@@ -49,6 +61,8 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/basic_view_margin"
+        android:layout_marginRight="@dimen/basic_view_margin"
         android:background="@color/mate_green"/>
 
     <TextView
@@ -56,6 +70,9 @@
         android:layout_height="wrap_content"
         android:text="Validation"
         android:id="@+id/validation"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/activity_horizontal"
+        android:drawableLeft="@drawable/ic_toys_black_24dp"
         android:textColor="@color/mate_blue"
         android:textSize="@dimen/font_medium"
         android:padding="@dimen/activity_horizontal" />
@@ -63,12 +80,17 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/basic_view_margin"
+        android:layout_marginRight="@dimen/basic_view_margin"
         android:background="@color/mate_green"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Newly Open Centers"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/activity_horizontal"
+        android:drawableLeft="@drawable/ic_toys_black_24dp"
         android:id="@+id/new_center"
         android:textColor="@color/mate_blue"
         android:textSize="@dimen/font_medium"
@@ -77,6 +99,8 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/basic_view_margin"
+        android:layout_marginRight="@dimen/basic_view_margin"
         android:background="@color/mate_green"/>
 
 
