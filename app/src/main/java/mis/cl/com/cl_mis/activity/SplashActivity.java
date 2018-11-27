@@ -3,6 +3,7 @@ package mis.cl.com.cl_mis.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AppCompatDelegate;
 
 import butterknife.ButterKnife;
 import mis.cl.com.cl_mis.R;
@@ -17,6 +18,7 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         ButterKnife.bind(this);
         proceedToLogin();
     }
